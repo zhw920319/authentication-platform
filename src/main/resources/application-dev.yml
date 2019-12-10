@@ -1,0 +1,18 @@
+server:
+  port: 8081
+#  context-path: /spring_boot
+  servlet:
+    context-path: /platform
+
+session:
+  store-type: redis #设置session存储类型为redis
+
+jackson:
+  serialization:
+    indent_output:  true
+
+transaction:
+  rollback-on-commit-failure: true
+logging:
+  pattern:
+    level: all
